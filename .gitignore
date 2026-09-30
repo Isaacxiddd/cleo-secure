@@ -1,0 +1,22 @@
+# Reportes de pentest: pueden contener datos sensibles de targets
+security/reports/*
+!security/reports/.gitkeep
+
+# Evidencia cruda (scans, output de herramientas)
+*.nmap
+*.ffuf.json
+
+# Secretos
+.env
+*.pem
+*.key
+id_rsa*
+
+# OS / editores
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
